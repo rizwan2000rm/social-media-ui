@@ -1,5 +1,11 @@
 // UTILITY CLASSES
 
+.navbar {
+  display: flex;
+  gap: 16px;
+  height: 64px;
+}
+
 .flex {
   display: flex;
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import { VoidHandler } from "../../types";
+
 import "./index.scss";
 
 interface ModalProps {
@@ -7,6 +9,7 @@ interface ModalProps {
   subheading: string;
   isClosable?: boolean;
   className?: string;
+  onClose?: VoidHandler;
 }
 
 const Modal = ({
@@ -15,6 +18,7 @@ const Modal = ({
   subheading,
   isClosable = false,
   className,
+  onClose,
   ...props
 }: ModalProps) => {
   return (
@@ -22,7 +26,12 @@ const Modal = ({
       <span className="flex align-center">
         {heading && <h3 className="heading mx-auto">{heading}</h3>}
         {isClosable && (
-          <img className="close-icon" src="/cross.svg" alt="close-modal" />
+          <img
+            onClick={onClose}
+            className="close-icon"
+            src="/cross.svg"
+            alt="close-modal"
+          />
         )}
       </span>
       {subheading && <h4 className="sub-heading mx-auto">{subheading}</h4>}

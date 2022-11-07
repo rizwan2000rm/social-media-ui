@@ -4,11 +4,20 @@ interface ButtonProps {
   text: string;
   isFullWidth?: boolean;
   className?: string;
+  onClick?: any;
 }
 
-const Button = ({ text, isFullWidth = false, className }: ButtonProps) => {
+const Button = ({
+  text,
+  isFullWidth = false,
+  className,
+  onClick,
+}: ButtonProps) => {
   return (
-    <button className={`button ${isFullWidth && "w-full"} ${className}`}>
+    <button
+      className={`button ${isFullWidth && "w-full"} ${className}`}
+      onClick={onClick}
+    >
       {text}
     </button>
   );
