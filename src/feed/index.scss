@@ -1,0 +1,45 @@
+.feed-layout {
+  width: 95%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.feed-card {
+  margin-bottom: 16px;
+  padding: 24px 20px;
+
+  h3 {
+    color: #c5c7ca;
+    margin-bottom: 16px;
+  }
+}
+
+.feed-input {
+  background-color: #191920;
+  color: #7f8084;
+
+  padding: 15px;
+  border-radius: 8px;
+
+  display: flex;
+  gap: 16px;
+
+  .emoji {
+    background-color: #27292d;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 100%;
+
+    display: grid;
+    place-items: center;
+  }
+
+  input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #7f8084;
+    width: 100%;
+  }
+}

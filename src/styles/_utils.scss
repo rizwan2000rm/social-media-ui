@@ -1,0 +1,67 @@
+// UTILITY CLASSES
+
+.flex {
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.min-w-lg {
+  @media (min-width: 800px) {
+    min-width: 500px !important;
+  }
+}
+
+.max-w-lg {
+  max-width: 500px !important;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.muted-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+
+  color: #7f8084;
+}

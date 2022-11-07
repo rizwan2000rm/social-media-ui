@@ -1,0 +1,14 @@
+.login-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.login-button {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}

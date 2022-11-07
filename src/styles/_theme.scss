@@ -1,0 +1,27 @@
+// OVERRIDES
+
+body {
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+
+  color: #c5c7ca;
+}

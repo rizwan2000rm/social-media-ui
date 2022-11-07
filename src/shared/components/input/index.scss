@@ -1,0 +1,37 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  label {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+
+    color: #c5c7ca;
+    margin-bottom: 10px;
+  }
+
+  input {
+    color: #fff;
+    background: #27292d;
+    border: 1.5px solid #35373b;
+    border-radius: 4px;
+    padding: 12px;
+    outline: none;
+    transition: border 250ms linear;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #7f8084;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      border: 1.5px solid #4a96ff;
+    }
+  }
+}
