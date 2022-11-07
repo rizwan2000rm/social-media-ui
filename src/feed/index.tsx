@@ -18,10 +18,10 @@ const Feed = () => {
 
   return (
     <div className="feed-layout">
-      <div className="navbar">
+      <div className="navbar row-reverse">
+        <Button text="Open Modal" onClick={openModal} />
         <Link to="/register">Go to Register</Link>
         <Link to="/login">Go to Login</Link>
-        <Button text="Open Modal" onClick={openModal} />
       </div>
       <h1>Hello Jane</h1>
       <p className="muted-text mb-40">
